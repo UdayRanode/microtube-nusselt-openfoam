@@ -1,5 +1,6 @@
 type            wallHeatFlux;
 libs            ("libfieldFunctionObjects.so");
 patches         (wall);
+setFormat       csv;
 executeControl  writeTime;
 writeControl    writeTime;
