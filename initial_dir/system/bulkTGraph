@@ -1,0 +1,7 @@
+type            cutLayerAverage;
+libs            ("libfieldFunctionObjects.so");
+fields          (T);
+nLayers         40;
+layerDirection  (0 0 1);
+executeControl  writeTime;
+writeControl    writeTime;

@@ -1,0 +1,30 @@
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+dimensions      [0 0 0 1 0 0 0];
+internalField   uniform 298.15;
+boundaryField
+{
+    inlet
+    {
+        type            fixedValue;
+        value           uniform 298.15;
+    }
+    outlet
+    {
+        type            inletOutlet;
+        inletValue      uniform 298.15;
+        value           uniform 298.15;
+    }
+    wall
+    {
+        type            externalWallHeatFluxTemperature;
+        mode            flux;
+        q               uniform 100000;
+        kappaMethod     fluidThermo;
+        value           uniform 298.15;
+    }
+}

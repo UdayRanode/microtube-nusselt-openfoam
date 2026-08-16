@@ -1,0 +1,114 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+
+convertToMeters 1;
+
+r        0.00025;
+a        0.00015;
+L        0.03;
+
+nCore    6;
+nRing    8;
+nAxial   80;
+
+gradRing 5;
+
+rNeg     -0.00025;
+aNeg     -0.00015;
+
+vertices
+(
+    ($aNeg $aNeg 0)
+    ( $a $aNeg 0)
+    ( $a  $a 0)
+    ($aNeg  $a 0)
+
+    (#calc "-$r*sin(degToRad(45))" #calc "-$r*cos(degToRad(45))" 0)
+    (#calc "$r*sin(degToRad(45))"  #calc "-$r*cos(degToRad(45))" 0)
+    (#calc "$r*sin(degToRad(45))"  #calc "$r*cos(degToRad(45))"  0)
+    (#calc "-$r*sin(degToRad(45))" #calc "$r*cos(degToRad(45))"  0)
+
+    ($aNeg $aNeg $L)
+    ( $a $aNeg $L)
+    ( $a  $a $L)
+    ($aNeg  $a $L)
+
+    (#calc "-$r*sin(degToRad(45))" #calc "-$r*cos(degToRad(45))" $L)
+    (#calc "$r*sin(degToRad(45))"  #calc "-$r*cos(degToRad(45))" $L)
+    (#calc "$r*sin(degToRad(45))"  #calc "$r*cos(degToRad(45))"  $L)
+    (#calc "-$r*sin(degToRad(45))" #calc "$r*cos(degToRad(45))"  $L)
+);
+
+blocks
+(
+    hex (0 1 2 3 8 9 10 11) ($nCore $nCore $nAxial) simpleGrading (1 1 1)
+    hex (0 4 5 1 8 12 13 9)  ($nRing $nCore $nAxial) simpleGrading ($gradRing 1 1)
+    hex (1 5 6 2 9 13 14 10) ($nRing $nCore $nAxial) simpleGrading ($gradRing 1 1)
+    hex (3 2 6 7 11 10 14 15) ($nCore $nRing $nAxial) simpleGrading (1 $gradRing 1)
+    hex (0 3 7 4 8 11 15 12) ($nCore $nRing $nAxial) simpleGrading (1 $gradRing 1)
+);
+
+edges
+(
+    arc 4 5 (0 $rNeg 0)
+    arc 5 6 ($r 0 0)
+    arc 6 7 (0 $r 0)
+    arc 7 4 ($rNeg 0 0)
+
+    arc 12 13 (0 $rNeg $L)
+    arc 13 14 ($r 0 $L)
+    arc 14 15 (0 $r $L)
+    arc 15 12 ($rNeg 0 $L)
+);
+
+boundary
+(
+    inlet
+    {
+        type patch;
+        faces
+        (
+            (0 3 2 1)
+            (0 1 5 4)
+            (1 2 6 5)
+            (3 7 6 2)
+            (0 4 7 3)
+        );
+    }
+    outlet
+    {
+        type patch;
+        faces
+        (
+            (8 9 10 11)
+            (8 9 13 12)
+            (9 10 14 13)
+            (11 10 14 15)
+            (8 12 15 11)
+        );
+    }
+    wall
+    {
+        type wall;
+        faces
+        (
+            (4 5 13 12)
+            (5 6 14 13)
+            (6 7 15 14)
+            (7 4 12 15)
+        );
+    }
+);
+
+// ************************************************************************* //
