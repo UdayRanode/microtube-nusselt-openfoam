@@ -8,7 +8,7 @@ L = 0.03
 nBins = 40
 
 # --- Bulk: use CELL data, weight by cell volume ---
-vol = pv.read("VTK/mic_first_625.vtk")
+vol = pv.read("VTK/initial_dir_625.vtk")
 vol = vol.compute_cell_sizes(length=False, area=False, volume=True)
 cell_centers = vol.cell_centers().points
 z_vol = cell_centers[:, 2]
