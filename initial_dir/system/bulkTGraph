@@ -3,5 +3,6 @@ libs            ("libfieldFunctionObjects.so");
 fields          (T);
 nLayers         40;
 layerDirection  (0 0 1);
+setFormat       csv;
 executeControl  writeTime;
 writeControl    writeTime;
