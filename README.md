@@ -175,6 +175,16 @@ This case was originally developed on **OpenFOAM-13** and later ported to run on
 
 ---
 
+## Resources
+
+References followed while building this case:
+
+- **[OpenFOAM Official Documentation (v2606)](https://doc.openfoam.com/2606/)** -- official reference documentation covering case setup, boundary conditions, function objects, and solver usage.
+- **[CFD Direct: CFD General Principles](https://doc.cfd.direct/notes/cfd-general-principles/contents)** -- book/course notes covering the underlying numerical methods (finite volume discretization, SIMPLE algorithm, convergence) used by OpenFOAM's solvers.
+- **[OpenFOAM Source Code -- fvOptions (GitLab, v2606)](https://gitlab.com/openfoam/core/openfoam/-/tree/OpenFOAM-v2606/src/fvOptions)** -- official OpenFOAM source repository, used for verifying exact keyword names and dictionary structures when version-specific syntax issues came up.
+
+---
+
 ## License / Attribution
 
 Educational recreation of a published verification & validation study for coursework purposes. Original paper: Pourghasemi & Fathi, ASME VVS2021-65326.
