@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=microtube_nu        # Job name
 #SBATCH --partition=compute            # Partition name
-#SBATCH --nodelist=node2
 #SBATCH --nodes=1                      # Number of nodes
-#SBATCH --ntasks-per-node=1            # Serial run - case is small (~18k cells)
+#SBATCH --ntasks=1                     # Serial run - case is small (~18k cells)
+#SBATCH --cpus-per-task=1
 #SBATCH --time=01:00:00                # Time limit (hh:mm:ss) - case runs in minutes
 #SBATCH --output=log.slurm.%j.out      # Standard output log (%j = job ID)
 #SBATCH --error=log.slurm.%j.err       # Standard error log
