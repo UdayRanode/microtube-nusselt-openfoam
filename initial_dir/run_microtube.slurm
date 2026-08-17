@@ -1,6 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=microtube_nu        # Job name
-#SBATCH --partition=compute            # Partition name
+#SBATCH --account=student              # Account name
+#SBATCH --partition=student            # Partition name (matches account)
 #SBATCH --nodes=1                      # Number of nodes
 #SBATCH --ntasks=1                     # Serial run - case is small (~18k cells)
 #SBATCH --cpus-per-task=1
