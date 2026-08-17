@@ -1,0 +1,46 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 12
+Exec   : foamToVTK -latestTime
+Date   : Aug 17 2026
+Time   : 16:14:59
+Host   : "node1"
+PID    : 1456504
+I/O    : uncollated
+Case   : /home/che2400080033/microtube-nusselt-openfoam/initial_dir
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 625
+
+Time: 625
+--> FOAM Warning : 
+    From function const Foam::HashTable<Foam::List<int>, Foam::word>& Foam::polyBoundaryMesh::groupPatchIndices() const
+    in file meshes/polyMesh/polyBoundaryMesh/polyBoundaryMesh.C at line 506
+    Removing patchGroup 'wall' which clashes with patch 2 of the same name.
+    volScalarFields            : p T rho
+    volVectorFields            : U
+
+    Internal  : "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/VTK/initial_dir_625.vtk"
+    Original cells:18240 points:19521   Additional cells:0  additional points:0
+
+Combining patches:
+    patch 0 inlet
+    patch 1 outlet
+    patch 2 wall
+    Patch     : "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/VTK/inlet/inlet_625.vtk"
+    Patch     : "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/VTK/outlet/outlet_625.vtk"
+    Patch     : "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/VTK/wall/wall_625.vtk"
+    surfScalarFields  : phi
+End
+

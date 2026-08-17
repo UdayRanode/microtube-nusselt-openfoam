@@ -1,0 +1,139 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 12
+Exec   : blockMesh
+Date   : Aug 17 2026
+Time   : 16:13:38
+Host   : "node1"
+PID    : 1455752
+I/O    : uncollated
+Case   : /home/che2400080033/microtube-nusselt-openfoam/initial_dir
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading "blockMeshDict"
+
+Creating block mesh from
+    "system/blockMeshDict"
+Expanding #calc at line 37 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Creating new library in "dynamicCode/_e77c1e808362a30ed46b22c78f29ce7384983176/platforms/linux64GccDPInt32Opt/lib/libcodeStream_e77c1e808362a30ed46b22c78f29ce7384983176.so"
+"/nfsroot/apps/codes/OpenFoam-12/OpenFOAM-12/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_e77c1e808362a30ed46b22c78f29ce7384983176/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_e77c1e808362a30ed46b22c78f29ce7384983176"
+wmake libso /home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_e77c1e808362a30ed46b22c78f29ce7384983176
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_e77c1e808362a30ed46b22c78f29ce7384983176/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_e77c1e808362a30ed46b22c78f29ce7384983176.so
+Expanding #calc at line 37 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Creating new library in "dynamicCode/_0017f9deff431d2a7cbf8cb0260dce6952754ee9/platforms/linux64GccDPInt32Opt/lib/libcodeStream_0017f9deff431d2a7cbf8cb0260dce6952754ee9.so"
+"/nfsroot/apps/codes/OpenFoam-12/OpenFOAM-12/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_0017f9deff431d2a7cbf8cb0260dce6952754ee9/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_0017f9deff431d2a7cbf8cb0260dce6952754ee9"
+wmake libso /home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_0017f9deff431d2a7cbf8cb0260dce6952754ee9
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_0017f9deff431d2a7cbf8cb0260dce6952754ee9/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_0017f9deff431d2a7cbf8cb0260dce6952754ee9.so
+Expanding #calc at line 38 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Creating new library in "dynamicCode/_50ede19fb20d745e5c3c0803817c7faf38adbd21/platforms/linux64GccDPInt32Opt/lib/libcodeStream_50ede19fb20d745e5c3c0803817c7faf38adbd21.so"
+"/nfsroot/apps/codes/OpenFoam-12/OpenFOAM-12/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_50ede19fb20d745e5c3c0803817c7faf38adbd21/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_50ede19fb20d745e5c3c0803817c7faf38adbd21"
+wmake libso /home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_50ede19fb20d745e5c3c0803817c7faf38adbd21
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_50ede19fb20d745e5c3c0803817c7faf38adbd21/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_50ede19fb20d745e5c3c0803817c7faf38adbd21.so
+Expanding #calc at line 38 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Expanding #calc at line 39 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Expanding #calc at line 39 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Creating new library in "dynamicCode/_7e249ca7d07d0f1f35d6d7c0e89271fdd0782bf6/platforms/linux64GccDPInt32Opt/lib/libcodeStream_7e249ca7d07d0f1f35d6d7c0e89271fdd0782bf6.so"
+"/nfsroot/apps/codes/OpenFoam-12/OpenFOAM-12/etc/codeTemplates/dynamicCode/codeStreamTemplate.C" "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_7e249ca7d07d0f1f35d6d7c0e89271fdd0782bf6/codeStreamTemplate.C"
+Invoking "wmake -s libso /home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_7e249ca7d07d0f1f35d6d7c0e89271fdd0782bf6"
+wmake libso /home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_7e249ca7d07d0f1f35d6d7c0e89271fdd0782bf6
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/che2400080033/microtube-nusselt-openfoam/initial_dir/dynamicCode/_7e249ca7d07d0f1f35d6d7c0e89271fdd0782bf6/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_7e249ca7d07d0f1f35d6d7c0e89271fdd0782bf6.so
+Expanding #calc at line 40 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Expanding #calc at line 40 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Expanding #calc at line 47 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Expanding #calc at line 47 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Expanding #calc at line 48 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Expanding #calc at line 48 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Expanding #calc at line 49 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Expanding #calc at line 49 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Expanding #calc at line 50 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Expanding #calc at line 50 in file "/home/che2400080033/microtube-nusselt-openfoam/initial_dir/system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 8
+		Number of boundary faces : 14
+		Number of defined boundary faces : 14
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 5e-05 .. 5e-05
+        j : 5e-05 .. 5e-05
+        k : 0.000375 .. 0.000375
+    Block 1 cell size :
+        i : 1.84959e-06 .. 9.24795e-06 3.47027e-06 .. 1.73513e-05 1.84959e-06 .. 9.24795e-06 3.47027e-06 .. 1.73513e-05 
+        j : 5e-05 .. 5e-05 5.01244e-05 5e-05 5.01244e-05 .. 5.01244e-05 
+        k : 0.000375 .. 0.000375
+    Block 2 cell size :
+        i : 1.84959e-06 .. 9.24795e-06 3.47027e-06 .. 1.73513e-05 1.84959e-06 .. 9.24795e-06 3.47027e-06 .. 1.73513e-05 
+        j : 5e-05 .. 5e-05 5.01244e-05 5e-05 5.01244e-05 .. 5.01244e-05 
+        k : 0.000375 .. 0.000375
+    Block 3 cell size :
+        i : 5e-05 .. 5e-05 5.01244e-05 .. 5.01244e-05 5e-05 .. 5e-05 5.01244e-05 .. 5.01244e-05 
+        j : 1.84959e-06 .. 9.24795e-06 3.47027e-06 .. 1.73513e-05 1.84959e-06 .. 9.24795e-06 3.47027e-06 .. 1.73513e-05 
+        k : 0.000375 .. 0.000375
+    Block 4 cell size :
+        i : 5e-05 .. 5e-05 5.01244e-05 .. 5.01244e-05 5e-05 .. 5e-05 5.01244e-05 .. 5.01244e-05 
+        j : 1.84959e-06 .. 9.24795e-06 3.47027e-06 .. 1.73513e-05 1.84959e-06 .. 9.24795e-06 3.47027e-06 .. 1.73513e-05 
+        k : 0.000375 .. 0.000375
+
+No patch pairs to merge
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-0.00025 -0.00025 0) (0.00025 0.00025 0.03)
+  nPoints: 19521
+  nCells: 18240
+  nFaces: 55908
+  nInternalFaces: 53532
+----------------
+Patches
+----------------
+  patch 0 (start: 53532 size: 228) name: inlet
+  patch 1 (start: 53760 size: 228) name: outlet
+  patch 2 (start: 53988 size: 1920) name: wall
+
+End
+
